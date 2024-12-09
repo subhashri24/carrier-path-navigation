@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Career Assessment</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="assessment.html">Career Assessment</a></li>
+                <li><a href="explore.html">Explore Careers</a></li>
+                <li><a href="field.html">Emerging Fields</a></li>
+                <li><a href="resource.html">Learning Resources</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="assessment">
+        <h2>Career Assessment</h2>
+        <p>Take our assessment to identify your strengths and suitable career paths.</p>
+        
+        <form id="assessment-form">
+            <div>
+                <label>What interests you most?</label><br>
+                <input type="radio" name="interest" value="tech"> Tech
+                <input type="radio" name="interest" value="science"> Science
+                <input type="radio" name="interest" value="strategic thinking">Strategic thinking
+                <input type="radio" name="interest" value="creativity,culture">Creativity,Culture
+            </div>
+            <div>
+                <label>What skills do you have?</label><br>
+                <input type="radio" name="skills" value="coding"> Coding
+                <input type="radio" name="skills" value="research"> Research
+                <input type="radio" name="skills" value="project management">Project management
+                <input type="radio" name="skills" value="design,critical thinking,research">Design,critical thinking,Research
+            </div>
+            <button type="button" onclick="assessCareer()">Get Career Suggestion</button>
+        </form>
+
+        <div id="assessment-results"></div>
+        <script src="script.js"></script>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Career Path Navigator. All rights reserved.</p>
+    </footer>
+    
+    
+</body>
+</html>
+
